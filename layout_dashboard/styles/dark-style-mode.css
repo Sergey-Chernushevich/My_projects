@@ -1,0 +1,31 @@
+* {
+   color: #CACACA;
+}
+
+.wrapper {
+   background: linear-gradient(#212427, #7F7FD5);
+}
+
+.statistics,
+.heading {
+   border: 1px solid #212427;
+   border-radius: 0 15px 15px 0;
+   background-color: #212427;
+}
+
+.grid-container>div {
+   background-color: #282C31;
+}
+
+.search {
+   background: none;
+   border: 1px solid #4C4C4C;
+}
+
+.search input {
+   background: none;
+}
+
+.navigation {
+   background-color: #282C31;
+}

@@ -1,0 +1,31 @@
+* {
+   color: #4F4F4F;
+}
+
+.wrapper {
+   background: linear-gradient(#7F7FD5, #E786D7);
+}
+
+.statistics,
+.heading {
+   border: 1px solid #EFF3F9;
+   border-radius: 0 15px 15px 0;
+   background-color: #EFF3F9;
+}
+
+.grid-container>div {
+   background-color: #FDFDFF;
+}
+
+.search {
+   background-color: #fff;
+   border: 1px solid #fff;
+}
+
+.search input {
+   background: #fff;
+}
+
+.navigation {
+   background-color: #FDFDFF;
+}

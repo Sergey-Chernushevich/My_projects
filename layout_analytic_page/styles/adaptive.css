@@ -1,0 +1,148 @@
+@media screen and (max-width: 1200px) {
+   .content {
+      padding: 0 75px;
+   }
+
+   .story__text {
+      width: 40%;
+   }
+
+   .story__tiles {
+      width: 60%;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .content {
+      padding: 0 25px;
+   }
+
+   .story__text {
+      width: 100%;
+   }
+
+   .text__title {
+      text-align: center;
+   }
+
+   .text-description {
+      padding: 20px 0px 20px 0;
+   }
+
+   .story__tiles {
+      width: 100%;
+   }
+
+   footer .content {
+      justify-content: space-around;
+   }
+
+   .social-nets {
+      flex-direction: row;
+      width: 50%;
+      height: 50px;
+      margin: 0 auto;
+   }
+}
+
+@media screen and (max-width: 768px) {
+
+
+   .capabilities .content .block-1 {
+      flex-wrap: wrap;
+   }
+
+   .capabilities-title {
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   .capabilities-title .title {
+      text-align: center;
+   }
+
+   .capabilities-title .title::after {
+      transform: translate(-50%, 0);
+      left: 50%;
+   }
+
+   .capabilities__text {
+      width: 100%;
+      padding: 15px 0;
+      text-align: center;
+   }
+
+   .capabilities__button {
+      align-items: center;
+      margin: 0 auto;
+   }
+
+   .capabilities-tiles {
+      padding: 40px 0;
+      justify-content: center;
+   }
+
+   .cap-tile-item {
+      max-width: 295px;
+      width: 45%;
+      margin: 10px;
+
+   }
+
+   .offer .content {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   .regictration__form label {
+      width: 100%;
+      padding-right: 0;
+      padding-bottom: 20px;
+      text-align: center;
+   }
+
+   .info .content {
+      padding: 20px 50px;
+
+   }
+
+   .company {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+   }
+
+   .company span {
+      width: 100%;
+      text-align: center;
+   }
+
+   .company {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+   }
+
+   .company-logo {
+      margin: 0 auto;
+   }
+
+   .company-info {
+      line-height: 19px;
+      padding: 0 0 50px 0;
+      text-align: center;
+   }
+
+   .lblock-1,
+   .lblock-2,
+   .lblock-3 {
+      margin-bottom: 25px;
+   }
+
+   .contacts {
+      height: 160px;
+      margin-right: 0;
+   }
+}
+
+@media screen and (max-width: 576px) {}

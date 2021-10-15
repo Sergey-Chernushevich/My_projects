@@ -1,0 +1,370 @@
+@font-face {
+   font-family: Gilroy;
+   src: url(../fonts/Gilroy-FREE/Gilroy-ExtraBold.otf);
+   src: url(../fonts/Gilroy-FREE/Gilroy-Light.otf);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Gilroy;
+   font-size: 20px;
+}
+
+body {
+   min-width: 1600px;
+   height: 100vh;
+}
+
+.wrapper {
+   min-width: 1600px;
+   z-index: 0;
+   height: 100%;
+   display: flex;
+   align-items: center;
+
+}
+
+main {
+   margin: 0 auto;
+   z-index: 10;
+   left: 50%;
+   top: 50%;
+   font-size: 20px;
+   display: flex;
+   border-radius: 15px;
+}
+
+#friends {
+   grid-area: friends;
+}
+
+#visitors {
+   grid-area: visitors;
+}
+
+#folowers {
+   grid-area: folowers;
+}
+
+#audience {
+   grid-area: audience;
+}
+
+#reach {
+   grid-area: reach;
+}
+
+#gender {
+   grid-area: gender;
+}
+
+#geo {
+   grid-area: geo;
+}
+
+.grid-container {
+   width: 1280px;
+   height: 850px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+   grid-template-areas:
+      "friends friends friends friends visitors visitors visitors visitors folowers folowers folowers folowers"
+      "friends friends friends friends visitors visitors visitors visitors folowers folowers folowers folowers"
+      "audience audience audience audience audience audience audience audience audience reach reach reach"
+      "audience audience audience audience audience audience audience audience audience reach reach reach"
+      "audience audience audience audience audience audience audience audience audience reach reach reach"
+      "gender gender gender gender gender gender gender gender geo geo geo geo"
+      "gender gender gender gender gender gender gender gender geo geo geo geo"
+      "gender gender gender gender gender gender gender gender geo geo geo geo";
+   grid-gap: 32px;
+   padding: 50px;
+}
+
+.grid-container>div {
+   text-align: center;
+   font-size: 30px;
+}
+
+.grid-element {
+   border-radius: 13px;
+   padding: 25px;
+   display: flex;
+   font-weight: 500;
+   font-size: 20px;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.element-label,
+.amount-data {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.element-label {
+   font-weight: 700;
+   align-items: center;
+   padding-bottom: 25px;
+}
+
+.element-label span {
+   flex-grow: 1;
+   text-align: left;
+}
+
+.amount-data {
+   display: flex;
+   justify-content: space-between;
+   height: 100%;
+   align-items: flex-end;
+}
+
+.amount-peole {
+   flex-grow: 1;
+   text-align: left;
+   font-weight: 500;
+   line-height: 24px;
+}
+
+.arrow {
+   margin-left: 10px;
+}
+
+.burger {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.audience_amount {
+   width: 100%;
+   height: 100%;
+}
+
+.daterange {
+   display: flex;
+   align-items: center;
+}
+
+.daterange input {
+   outline: none;
+   border: none;
+   font-size: 12px;
+   width: 100%;
+   width: 170px;
+   background: none;
+}
+
+.custom-checkbox {
+   position: absolute;
+   z-index: -1;
+   opacity: 0;
+}
+
+.characteristics .custom-checkbox+label {
+   display: inline-flex;
+   align-items: center;
+   user-select: none;
+}
+
+.custom-checkbox+label::before {
+   content: '';
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   flex-shrink: 0;
+   flex-grow: 0;
+   border: 2px solid #7F7FD5;
+   border-radius: 5px;
+   margin-right: 6px;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+#folower.custom-checkbox+label::before {
+   border: 2px solid #E786D7;
+}
+
+.custom-checkbox:checked+label::before {
+   background-image: url("../img/check-1.svg");
+}
+
+#folower.custom-checkbox:checked+label::before {
+   background-image: url("../img/check-2.svg");
+}
+
+.characteristics label {
+   font-size: 12px;
+   height: 100%;
+   line-height: 20px;
+   margin-right: 20px;
+}
+
+
+.reach_amount,
+.graph {
+   width: 100%;
+   height: 100%;
+}
+
+.geo_label .country {
+   font-weight: 600;
+   font-size: 12px;
+   padding-right: 15px;
+}
+
+.geo_label .city {
+   font-weight: 500;
+   font-size: 12px;
+   color: #979797;
+}
+
+.heading {
+   display: flex;
+   align-items: center;
+   padding: 50px 50px 0 50px;
+}
+
+.heading-title {
+   font-weight: bold;
+   font-size: 30px;
+   margin-right: 45px;
+}
+
+.search {
+   padding: 0 15px;
+   width: 170px;
+   height: 35px;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   margin-right: 15px;
+}
+
+.search img {
+   margin-right: 15px;
+   width: 9px;
+   height: 9px;
+}
+
+.search input {
+   border: none;
+   outline: none;
+   width: 100%;
+   font-size: 12px;
+}
+
+.search img:hover {
+   transform: scale(1.5);
+}
+
+.user {
+   display: flex;
+   align-items: center;
+   margin-left: auto;
+}
+
+.user-avatar {
+   margin: 0 10px;
+}
+
+.user-arrow {
+   margin: 0 10px 0 0;
+}
+
+.navigation {
+   width: 100px;
+   padding: 65px 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 15px 0 0 15px;
+}
+
+.nav ul li {
+   list-style-type: none;
+   margin-bottom: 40px;
+}
+
+a svg:hover path {
+   fill: #7F7FD5;
+}
+
+svg:hover {
+   transform: scale(1.5);
+}
+
+.decoration {
+   width: 60px;
+   height: 30px;
+}
+
+input#theme-switch {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   -webkit-appearance: none;
+   border: 1px solid #4F4F4F;
+   border-radius: 15px;
+   outline: none;
+   transition: .5s;
+}
+
+input#theme-switch:hover {
+   cursor: pointer;
+}
+
+input:checked#theme-switch {
+   background-color: #7F7FD5;
+}
+
+input#theme-switch::before {
+   content: '';
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   border-radius: 15px;
+   top: 4px;
+   left: 5px;
+   background-color: #7F7FD5;
+   transition: .5s;
+   background-image: url(../img/moon.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+input#theme-switch:checked::before {
+   left: 32px;
+   box-shadow: 0px 0px 0px 4px inset #fff;
+   background-image: none;
+}
+
+.graph {
+   height: 100%;
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.audience_amount .graph {
+   background-image: url(../img/Group109.png);
+}
+
+.reach_amount .graph {
+   background-image: url(../img/method-draw-image.svg);
+
+}
+
+.gender_amount .graph {
+   background-image: url(../img/gendergraph.svg);
+}
+
+.geo_amount .graph {
+   background-image: url(../img/geograph.svg);
+}
